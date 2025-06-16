@@ -4,9 +4,10 @@ from transformers import pipeline
 from flask_cors import CORS
 import PyPDF2
 import io
+import os  # ✅ Needed for Railway PORT environment
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])
+CORS(app, origins=["*"])  # Allow all origins for testing; restrict in production
 
 # Load a sentiment analysis pipeline from Hugging Face
 nlp_pipeline = pipeline("sentiment-analysis")
@@ -32,10 +33,11 @@ def predict():
 
     try:
         result = nlp_pipeline(text[:512])  # truncate to 512 tokens
-        # result is like: [{'label': 'POSITIVE', 'score': 0.998}]
         return jsonify(result), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# ✅ Railway/production-ready entry point
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(debug=False, host="0.0.0.0", port=port)
