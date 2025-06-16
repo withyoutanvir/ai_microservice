@@ -1,0 +1,13 @@
+flask
+flask-cors
+transformers
+torch
+datasets
+scikit-learn
+pdf2image
+pytesseract
+opencv-python-headless
+Pillow
+requests
+flask-compress
+PyPDF2
