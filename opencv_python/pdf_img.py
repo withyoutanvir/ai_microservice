@@ -1,11 +1,11 @@
-# pdf_img.py
-
 from pdf2image import convert_from_path
 
 def convert_pdf_to_images(pdf_path):
     try:
-        images = convert_from_path(pdf_path, dpi=300)
-        return images
+        return convert_from_path(
+            pdf_path,
+            poppler_path=r"C:\Users\Asus\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"  # <== your poppler path
+        )
     except Exception as e:
-        print(f"Error converting PDF to images: {e}")
+        print("Error converting PDF to images:", e)
         return []

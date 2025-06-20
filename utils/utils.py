@@ -27,6 +27,8 @@ def get_disease_solution_map():
         "tuberculosis": "Seek immediate medical attention and follow the full course of antibiotics.",
         "typhoid": "Maintain hygiene, stay hydrated, and follow the prescribed antibiotics course.",
         "hepatitis": "Avoid alcohol, rest, and follow doctor’s dietary guidelines.",
+        "ebola": "Seek emergency care. Isolate to prevent spread.",
+        "zika": "Rest, fluids, and acetaminophen for pain relief.",
 
         # Chronic diseases
         "diabetes": "Maintain a healthy diet, exercise, and monitor sugar levels.",
@@ -42,6 +44,7 @@ def get_disease_solution_map():
         "stroke": "Immediate medical intervention is critical. Rehabilitate under guidance.",
         "arthritis": "Exercise gently, use anti-inflammatory medication, and maintain joint care.",
         "osteoporosis": "Calcium/vitamin D intake and weight-bearing exercises help.",
+        "epilepsy": "Use antiepileptic drugs regularly and avoid triggers.",
 
         # Common symptoms
         "fever": "Monitor temperature, drink fluids, and rest. Seek help if fever persists.",
@@ -57,38 +60,52 @@ def get_disease_solution_map():
         "chills": "Keep warm and monitor for fever or infections.",
         "shortness of breath": "Seek immediate medical attention especially if sudden or severe.",
         "chest pain": "This may be serious — consult a doctor immediately.",
+        "runny nose": "Use a nasal spray and stay hydrated.",
+        "congestion": "Inhale steam, rest, and use decongestants if needed.",
+        "loss of taste": "Monitor symptoms and consult a doctor if it persists.",
+        "loss of smell": "Could be due to infection — monitor and seek help.",
+        "itchy eyes": "Use antihistamine drops and avoid allergens.",
 
         # Mental health
         "anxiety": "Practice relaxation, avoid caffeine, and consider therapy.",
         "depression": "Talk to a mental health professional, stay socially connected, and get regular exercise.",
         "stress": "Take breaks, meditate, and manage workload effectively.",
+        "panic attack": "Practice breathing exercises and seek professional help if frequent.",
+        "bipolar disorder": "Medication and therapy are crucial for stability.",
 
         # Women's health
         "menstrual cramps": "Use heat packs, stay hydrated, and take pain relievers if needed.",
         "pcos": "Maintain a healthy weight and diet, and take hormonal treatment if prescribed.",
         "pregnancy": "Ensure regular checkups, eat balanced meals, and avoid strenuous activity.",
+        "menopause": "Stay active, eat well, and consult for hormone therapy if needed.",
 
         # Skin and allergies
         "allergy": "Avoid allergens and use antihistamines as prescribed.",
         "eczema": "Use moisturizers and avoid irritants.",
         "acne": "Maintain face hygiene and avoid greasy food.",
         "rash": "Avoid scratching, keep area clean, and use medicated creams if needed.",
+        "hives": "Identify triggers and take antihistamines.",
+        "psoriasis": "Use prescribed creams and avoid known irritants.",
 
         # Digestive issues
         "indigestion": "Avoid overeating, spicy food, and eat slowly.",
         "gastritis": "Avoid NSAIDs, spicy foods, and consult a gastroenterologist if persistent.",
         "ulcer": "Follow a bland diet and prescribed medication regularly.",
         "constipation": "Increase fiber intake and drink more water.",
+        "bloating": "Eat smaller meals and avoid gas-producing foods.",
+        "acid reflux": "Avoid lying down after meals and avoid spicy/fatty food.",
 
         # Urinary conditions
         "uti": "Drink lots of water and complete any antibiotic course prescribed.",
         "urinary tract infection": "Drink water and avoid holding urine for too long.",
+        "kidney stones": "Drink water and follow prescribed treatment for pain and expulsion.",
 
         # Pediatric/geriatric
         "measles": "Isolate, rest, and follow doctor’s instructions.",
         "chickenpox": "Rest, avoid scratching, and follow antiviral treatment if needed.",
         "alzheimer's": "Medication and routine-based care help manage symptoms.",
         "parkinson's": "Physiotherapy and medication can help manage symptoms.",
+        "autism": "Early therapy and structured support can help with development.",
 
         # Miscellaneous
         "anemia": "Consume iron-rich foods and take supplements if prescribed.",
